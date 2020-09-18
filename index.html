@@ -60,7 +60,7 @@ position:absolute;
 
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="./img//Reapway Logo one (2).png" height="50px"/>
+        <img src="./img//Reapway Logo one (1).png" height="50px"/>
       </button>
 
         
@@ -72,7 +72,7 @@ position:absolute;
           <ul class="navbar-nav mr-auto hide-on-mobile" >
             <li class="nav-item active ">
               <!-- <h4 class="font-weight-bold text-black-50">Sunday</h4> -->
-              <img  src="./img/Reapway Logo one (2).png" height="60px"/>
+              <img  src="./img/Reapway Logo one (1).png" height="60px"/>
             </li>
             
           </ul>
@@ -139,7 +139,7 @@ position:absolute;
             market and placing accurate profit laden 
             trades.
           </p>
-          <button class="btn reap-bg-color text-white font-weight-bold btn-rounded mt-4 waves-effect px-5 mx-auto d-block" type="submit">Get Started</button>
+          <button class="btn reap-bg-orange-color text-white font-weight-bold btn-rounded mt-4 waves-effect px-5 mx-auto d-block" type="submit">Get Started</button>
 
         </div>
       </div>
@@ -150,7 +150,7 @@ position:absolute;
   <!--Main layout-->
   <main class="">
     <div  id="how-it-works" class="">
-      <div class="container-fluid" >
+      <div class="container" >
         <div class="col-md-12" >
           <h3 class="reap-color font-weight-bold text-center mb-4">
             HOW IT WORKS
@@ -214,7 +214,7 @@ position:absolute;
                 <p class="card-text">N2,000,000 (2M)</p>
                 <p class="card-text">N2,000,000 (2M)</p>
 
-                <a href="#" class="btn reap-bg-color text-white">Invest</a>
+                <a href="#" class="btn reap-bg-orange-color text-white">Invest</a>
               </div>
             </div>
           </div>
@@ -226,7 +226,7 @@ position:absolute;
                 <h2 class="card-title font-weight-bolder text-success">25%</h2>
                 <p class="card-text">N2,000,000 (2M)</p>
                 <p class="card-text">N2,000,000 (2M)</p>
-                <a href="#" class="btn reap-bg-color text-white">Invest</a>
+                <a href="#" class="btn reap-bg-orange-color text-white">Invest</a>
               </div>
             </div>
           </div>
@@ -238,7 +238,7 @@ position:absolute;
                 <h2 class="card-title font-weight-bolder">25%</h2>
                 <p class="card-text">N2,000,000 (2M)</p>
                 <p class="card-text">N2,000,000 (2M)</p>
-                <a href="#" class="btn reap-bg-color text-white">Invest</a>
+                <a href="#" class="btn reap-bg-orange-color text-white">Invest</a>
               </div>
             </div>
           </div>
@@ -352,7 +352,7 @@ every of our Products and Services.
             </div>
           </div>
         </div>
-        <button class="text-white reap-bg-color d-block mx-auto">Read More</button>
+        <button class="text-white reap-bg-color rounded d-block mx-auto">Read More</button>
       </div>
     </div>
     <div id="faq">
@@ -544,8 +544,24 @@ every of our Products and Services.
   var scroll = $(window).scrollTop();
   if(scroll < 300){
       $('.fixed-top').css('background', 'transparent');
-  } else{
-      $('.fixed-top').css('background', '#3F8A03');
+      $('.fixed-top a').css('color', 'white');
+      $('.fixed-top .btn').css('color', 'green');
+      $('.fixed-top').css("box-shadow", "none");
+
+
+
+
+  } else if(scroll>3500){
+      $('.fixed-top').css('background', '#ffa304');
+      $('.fixed-top a').css('color', 'green');
+      $('.fixed-top .btn').css('color', 'green');
+  }else{
+    $('.fixed-top').css('background', '#fff');
+    $('.fixed-top a').css('color', 'green');
+    $('.fixed-top').css("box-shadow", "0px 9px 12px -4px rgba(022,022,022,.4)");
+
+
+
   }
 });
 </script>

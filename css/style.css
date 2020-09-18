@@ -1,5 +1,15 @@
-.reap-bg-color{background-color:#3F8A03}
-.reap-color{color:#3F8A03 }
+:root {
+    --main-color: #3F8A03;
+    --inverse-color: #ffa304;
+
+
+
+}  
+.reap-bg-color{background-color:var(--main-color)}
+.reap-color{color:var(--main-color) }
+.reap-orange-color{color: var(--inverse-color);}
+.reap-bg-orange-color{background-color: var(--inverse-color);}
+
 p{
     font-weight: 500;
     font-family: 'Nunito', sans-serif;
@@ -12,8 +22,8 @@ p{
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to left,#4d8f17b4 0%,rgba(19, 102, 37, 0.89) 100%),url("../img/Image\ 1.png");
-    background-blend-mode:hard-light;
+    background-image: linear-gradient(to left,#141613b4 0%,#0e0c0e 100%),url("../img/Image\ 1.png");
+    background-blend-mode: multiply;
 }
 
 .home-header h1{
@@ -54,17 +64,17 @@ margin-top: 6em;
 #how-it-works .col-md-3>div{
     margin: auto;
     padding-top: 30px;
-    background-color: #3F8A03;
+    background-color: #408a039a;
     border-radius: 100px;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
 }
 
 #how-it-works .col-md-3>div>img{
     margin: auto;
     display: block;
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
    
 }
 
@@ -192,7 +202,7 @@ margin-top: 10em;
 
 footer {
 
-    background-color: #3F8A03;
+    background-color: var(--inverse-color);
 
 }
 
@@ -201,7 +211,7 @@ footer input[type=email]{
     border-radius: 0px;
     height: 40px;
     border: 1px solid rgba(156, 156, 68, 0.555);
-    background-color: #3F8A03;
+    background-color: var(--inverse-color);
     color: white;
 
 }

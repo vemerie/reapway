@@ -223,7 +223,7 @@ main#withdraw .form-group-wrapper i.fa-eye{
   color: green;
   font-size: 24px;
   top: .5em;
-  left: 42em;
+  right: 4%;
 }
 
 
@@ -292,6 +292,10 @@ footer button{
 /* 
     .section-chart{
       height: 700px;
+    } */
+
+    /* .navbar{
+      width: 10%;
     } */
   
   }
