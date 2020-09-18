@@ -55,7 +55,7 @@ margin-top: 6em;
     padding-top: 2em;
     position: relative;
   /* background: url("../img/Ellipse\ 1.png"); */
-  background-color: #4f5a453a;
+  background-color: #4f5a4513;
  
 
 }
@@ -78,31 +78,34 @@ margin-top: 6em;
    
 }
 
-main #best-investment-plan .card{
+p{
+    /* color: #fff; */
+}
+
+ #best-investment-plan .card{
     display: block;
   
     margin: auto;
 }
-
-main #best-investment-plan .card-body>p.stroke{
+ #best-investment-plan .card-body>p.stroke{
     display: block;
     height: 2px; width: 50px; 
     background-color: rgb(144, 144, 165);
     margin: auto;
 }
 
-main #best-investment-plan .card-body>h2{
+ #best-investment-plan .card-body>h2{
 margin-top:1.8em;
 margin-bottom:1.8em;
 font-weight: 900;
 }
 
 /* Investment */
-main #investment{
+ #investment{
     margin-top:8em;
 }
 
-main #investment img{
+ #investment img{
     width: 250px;
 }
 
@@ -110,7 +113,7 @@ main #investment img{
 main #investor .title{
     width: 30%;
  padding: .3em;
- background-color: rgba(153, 205, 50, 0.377);
+ background-color: #408a0336;
  text-align:center;
  margin: 2em auto 1em;
  font-weight: 900;
@@ -127,7 +130,7 @@ main #investor img{
    #customers{
     margin-top: 3em;
     padding-bottom: 3em;
-    background-color: rgba(153, 205, 50, 0.377);
+    background-color: #408a0336;
    }
 
 
@@ -190,6 +193,10 @@ nav .nav-link:hover{
     box-shadow: none;
 }
 
+/* .navbar-collapse.collapse.show  a{
+    color: green;
+} */
+
 
 
 /* About */
@@ -201,9 +208,7 @@ margin-top: 10em;
 
 
 footer {
-
-    background-color: var(--inverse-color);
-
+    background-color: #408a03a1;
 }
 
 footer input[type=email]{
@@ -211,7 +216,7 @@ footer input[type=email]{
     border-radius: 0px;
     height: 40px;
     border: 1px solid rgba(156, 156, 68, 0.555);
-    background-color: var(--inverse-color);
+    background-color: #408a03a1;
     color: white;
 
 }
@@ -226,6 +231,17 @@ footer button{
 
 
 @media (max-width: 1199.98px) {
+
+    .home-header{
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to left,#141613b4 0%,#0e0c0e 100%),url("../img/Image\ 1.png");
+        background-blend-mode: multiply;
+    }
     .navbar-nav {
       display: inline;
         }
@@ -238,15 +254,30 @@ footer button{
         }
 
         .fixed-top{
-            background: #3F8A03;
+            background: white !important;
         }
-       
+        .fixed-top .nav-link{
+            color: green !important;
 
+        }
+
+        /* .mobile-nav{
+            background-color: white;
+        } */
+       
+        h3{
+            padding: 0px 1em;
+            font-size: 25px;
+        }
         .home-header h1{
             margin-top: 3.5em;
             text-align: center;
-            font-size: 35px;
+            font-size: 30px;
 
+        }
+
+        #investment{
+            margin-top: 1em;
         }
 
         .home-header p{
@@ -262,7 +293,7 @@ footer button{
         main #investor .title{
             width: 60%;
          padding: .3em;
-         background-color: rgba(153, 205, 50, 0.377);
+         background-color: #ffa30479;
          text-align:center;
          margin: 2em auto 1em;
          font-weight: 900;
